@@ -1,0 +1,121 @@
+
+@use 'custom';
+
+body{
+    background-color: #222526;
+}
+
+
+// SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00B6F2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0094c5;
+  }
+
+
+
+
+// HERO IMAGE
+
+.hero-image{
+    width: 100%;
+    height: 75vh;
+    background: url("/Projekty/hejhej/images/Background-main-4k.jpg") top left;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+.custom-margin{
+    padding-top: 150px;
+  }
+
+// ABOUT US
+.my-color-aboutus{
+    background-color: #3D3F40;
+    transition: .3s ease-in;
+}
+
+.my-color-aboutus:hover{
+    background-color: #494c4d;
+    transition: .3s ease-in;
+    transform: scale(1.01);
+}
+
+.aboutus-image{
+    height: 100%;
+}
+
+.padding-aboutus{
+    padding: 100px 0 100px 0;
+}
+
+.my-border{
+    border: 5px solid #222526;
+
+}
+
+
+// GALLERY
+
+
+// .my-cover-label:hover{
+//     transform: translateY(-1.5rem);
+// }
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////
+///                          ABOUT US                                ///
+////////////////////////////////////////////////////////////////////////
+
+.my-secondary-color{
+    color: rgb(169, 169, 169);
+}
+
+
+////////////////////////////////////////////////////////////////////////
+///                           CONTACT                                ///
+////////////////////////////////////////////////////////////////////////
+
+.form-floating{
+  position: relative;
+}
+
+.icon{
+  position: absolute;
+  top: calc(50%);
+  left: 1.25rem;
+  z-index: 3;
+}
+
+.form-floating label, .form-floating .form-control {
+  left: .5rem;
+  padding-left: 3.5rem;
+}
+
+.icon-textarea{
+  position: absolute;
+  top: 1.8rem;
+  left: 1.9rem;
+  z-index: 3;
+}
