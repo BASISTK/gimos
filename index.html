@@ -12,14 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
 <body>
 
- 
- 
+  <div class="preloader-wrapper">
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+  </div>
+  <script>
+    $('html, body').css({ 'overflow': 'hidden', 'height': '100%' })
+  </script>
 <!-- Navbar -->
 
-    <div class="container-fluid px-0 mx-0 fixed-top bg-secondary">
+    <div class="container-fluid px-0 mx-0 fixed-top bg-secondary low-z-index">
       <div class="navbar navbar-expand-md" data-bs-theme="dark">
         <div class="container-fluid">
             <nav class="navbar">
@@ -58,7 +63,7 @@
 
 <!-- Hero obrázok -->
 
-    <div class="container-fluid hero-image">
+    <div class="container-fluid hero-image gradient-background">
       <div class="row" style="padding-top: 25vh; margin-bottom: 30vh;">
         <div class="col-12 text-center">
           <img class="mb-4 img-fluid" src="images/gimos-logo.svg" alt="" width="164" height="164">
@@ -111,7 +116,7 @@
     </div>
     <div class="col-lg-7 mt-5 ps-lg-5 mb-5 col-md-12 text-center text-lg-start">
       <h1 class="text-light">Stavba na kľúč</h1>
-      <p class="lead text-light">Stavba na kľúč je komplexný stavebný servis, ktorý vám umožní bezproblémovú a efektívnu realizáciu vášho vysnívaného domova alebo bytu. Naša spoločnosť sa zaoberá celým procesom výstavby od začiatku až po úplný dokončený projekt. S nami nemusíte riešiť zákaznícke povolenia, logistiku ani koordináciu rôznych dodávateľov. Všetky tieto aspekty zabezpečujeme my, čím vám ušetríme čas a nepríjemnosti. Naši odborníci s dlhoročnými skúsenosťami sa postarajú o kvalitné plánovanie, presný návrh a efektívne vykonanie celého projektu.</p>
+      <p class="lead text-light">Stavba na kľúč je komplexný stavebný servis, ktorý vám umožní bezproblémovú a efektívnu realizáciu vášho vysnívaného domu alebo bytu. Naša spoločnosť sa zaoberá celým procesom výstavby od začiatku až po úplný dokončený projekt.</p>
       <h3 class="mt-5 text-light text-left ">Už viac ako</h3>
       <h1 class="text-primary display-3 text-left">100+</h1>
       <h3 class="text-light text-left">dokončených projektov.</h3>
@@ -121,7 +126,7 @@
   <div class="row">
     <div class="col-lg-7 my-5 text-center text-lg-start">
       <h1 class="text-light">Rekonštrukcie</h1>
-      <p class="lead text-light">Naša spoločnosť sa špecializuje na kvalitnú rekonštrukciu interiérov aj exteriérov, či už ide o bytové jednotky, domy alebo komerčné priestory. Počas rekonštrukcie dbáme na precízne plánovanie, využitie moderných technológií a kvalitných materiálov, aby sme dosiahli optimálny výsledok, ktorý vyhovuje požiadavkám a predstavám našich klientov. Sme presvedčení, že kvalitná rekonštrukcia je investíciou do budúcnosti.</p>
+      <p class="lead text-light">Naša spoločnosť sa špecializuje na kvalitnú rekonštrukciu interiérov aj exteriérov, či už ide o bytové jednotky, domy alebo komerčné priestory. Sme presvedčení, že kvalitné rekonštrukcie sú investíciou do budúcnosti.</p>
       <h3 class="mt-5 text-light text-left">Radosť z našej práce obdržalo</h3>
       <h1 class="text-primary display-3 text-left">200+</h1>
       <h3 class="text-light text-left">spokojných zákazníkov.</h3>
@@ -137,7 +142,7 @@
     </div>
     <div class="col-lg-7 mt-5 ps-lg-5 mb-5 text-center text-lg-start">
       <h1 class="text-light">Atypické úpravy</h1>
-      <p class="lead text-light">Naším zámerom je vytvárať nekonvenčné riešenia, ktoré poskytnú unikátny charakter vášho projektu. Pracujeme s neštandardnými materiálmi, špeciálnymi prvkami a modernými technológiami, aby sme dosiahli osobitý vzhľad a funkcionalitu vášho objektu alebo interiéru. Spoločne vytvoríme štýlové a originálne prostredie, ktoré vás nadchne.</p>
+      <p class="lead text-light">Naším zámerom je vytvárať nekonvenčné riešenia, ktoré poskytnú unikátny charakter vášho projektu. Pracujeme s neštandardnými materiálmi, špeciálnymi nástrojmi a modernými technológiami, aby sme dosiahli osobitý vzhľad a funkcionalitu vášho objektu alebo interiéru. Spoločne vytvoríme štýlové a originálne prostredie, ktoré vás nadchne.</p>
       <h3 class="mt-5 text-light text-left">Získali sme</h3>
       <h1 class="text-primary display-3 text-left">20+</h1>
       <h3 class="text-light text-left">certifikátov a ocenení.</h3>
@@ -222,7 +227,14 @@
 
 <!-- FOOTER -->
 
-
+    <script>
+      $(window).on("load",function(){
+        $(".preloader-wrapper").fadeOut("slow");
+      });
+    </script>
+    <script>
+      $('html, body').removeAttr('style')
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
