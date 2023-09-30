@@ -12425,4 +12425,8 @@ body {
   z-index: 3;
 }
 
+.my-dropshadow {
+  filter: drop-shadow(0px 0px 15px #000000);
+}
+
 /*# sourceMappingURL=style.css.map */
